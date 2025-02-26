@@ -5,7 +5,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pickle
 import os
-
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_absolute_error as mae
@@ -13,10 +12,8 @@ from sklearn.linear_model import LinearRegression, Lasso, Ridge
 from sklearn.ensemble import RandomForestRegressor
 from xgboost import XGBRegressor
 
-# Set Streamlit page configuration
 st.set_page_config(page_title="Calorie Prediction App", layout="wide", page_icon= ":fire")
 
-# Load dataset
 DATA_PATH = "Dataset\calories_burnt.csv"
 MODEL_PATH = "calories_model.pkl"
 SCALER_PATH = "scaler.pkl"
