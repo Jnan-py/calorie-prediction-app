@@ -89,6 +89,7 @@ tab1, tab2 = st.tabs(["🔮 Prediction","📊 Visualizations"])
 
 with tab2:
     st.header("📊 Data Visualizations")
+    st.write(df)
     for plot_title, fig in st.session_state["plots"].items():
         st.subheader(plot_title)
         st.plotly_chart(fig, width = 350)
